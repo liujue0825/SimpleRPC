@@ -1,0 +1,2 @@
+zookeeper=com.lj.rpc.core.discovery.zookeeper.ZookeeperServiceDiscovery
+nacos=com.lj.rpc.core.discovery.nacos.NacosServiceDiscovery

@@ -1,0 +1,5 @@
+jdk=com.lj.rpc.core.serialization.jdk.JdkSerialization
+json=com.lj.rpc.core.serialization.json.JsonSerialization
+hessian=com.lj.rpc.core.serialization.hessian.HessianSerialization
+kyro=com.lj.rpc.core.serialization.kryo.KryoSerialization
+protostuff=com.lj.rpc.core.serialization.protostuff.ProtoStuffSerialization

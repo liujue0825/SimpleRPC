@@ -1,0 +1,3 @@
+random=com.lj.rpc.core.loadbalance.impl.RandomLoadBalance
+roundRobin=com.lj.rpc.core.loadbalance.impl.RoundRobinLoadBalance
+consistentHash=com.lj.rpc.core.loadbalance.impl.ConsistentHashLoadBalance
