@@ -1,0 +1,11 @@
+### HelloController
+GET http://localhost:8881/hello/liujue
+
+###
+GET http://localhost:8881/login/liujue
+
+###
+GET http://localhost:8881/hello/test/5
+
+###
+GET http://localhost:8881/abstracthello/liujue

@@ -1,0 +1,5 @@
+# springboot 的 autoconfig
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.lj.rpc.client.config.RpcClientAutoConfiguration
+
+

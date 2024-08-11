@@ -1,0 +1,17 @@
+server:
+  port: 8881
+
+# SimpleRPC
+rpc:
+  client:
+    load-balance: random
+    serialization: PROTOSTUFF
+    transport: netty
+    registry: zookeeper
+    registry-addr: 121.40.251.235:2181
+    timeout: 5000
+
+# 设置指定包下的日志显示级别 INFO/DEBUG/WARNING/OFF
+logging:
+  level:
+    com.lj.rpc: INFO

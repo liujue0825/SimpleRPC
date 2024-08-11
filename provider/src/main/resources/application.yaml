@@ -1,0 +1,13 @@
+# SimpleRPC
+rpc:
+  server:
+    app-name: provider-3
+    port: 9993
+    registry: zookeeper
+    registry-addr: 121.40.251.235:2181
+    transport: netty
+
+# 设置指定包下的日志显示级别 INFO/DEBUG/WARNING/OFF
+logging:
+  level:
+    com.lj.rpc: INFO
