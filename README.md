@@ -25,7 +25,7 @@
 
 RPC 框架架构图：
 
-![RPC-framework](images/RPC-framework.png)
+![RPC-framework](./images/RPC-framework.png)
 
 
 
