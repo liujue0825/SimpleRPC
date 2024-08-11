@@ -77,7 +77,7 @@ public class RpcEvaluation {
 1. `Benchmark`：表示基准测试的名称，通常是测试类名和方法名的组合。它指明了正在运行的具体基准测试。
 2. `Mode`：表示基准测试的模式，JMH 支持多种基准测试模式，包括：
 
-- - `Throughput`：表示吞吐量模式，度量每单位时间内完成的操作数。
+  - `Throughput`：表示吞吐量模式，度量每单位时间内完成的操作数。
   - `AverageTime`：表示平均时间模式，度量每次操作的平均时间。
   - `SampleTime`：表示采样时间模式，度量每次操作的时间分布。
   - `SingleShotTime`：表示单次调用模式，度量单次操作的时间，适用于冷启动测试。
@@ -86,7 +86,7 @@ public class RpcEvaluation {
 1. `Cnt(Count)`：表示测量的迭代次数。每次迭代都是一次独立的基准测试运行，JMH 会取多次运行的平均值来提高结果的可靠性。
 2. `Score`：这个字段表示基准测试的度量值，根据不同的模式，含义会有所不同：
 
-- - 在 `Throughput` 模式下，`Score` 表示每秒完成的操作数（如操作/秒）。
+  - 在 `Throughput` 模式下，`Score` 表示每秒完成的操作数（如操作/秒）。
   - 在 `AverageTime` 模式下，`Score` 表示每次操作的平均时间（如毫秒/操作）。
   - 在 `SampleTime` 模式下，`Score` 表示采样的时间值（如毫秒）。
   - 在 `SingleShotTime` 模式下，`Score` 表示单次操作的时间（如毫秒）。
@@ -94,7 +94,7 @@ public class RpcEvaluation {
 1. `Error`：这个字段表示基准测试结果的误差范围。JMH 使用标准误差（Standard Error）来表示结果的波动范围，通常使用 `±` 符号表示。这有助于了解结果的精确度。
 2. `Units`：这个字段表示度量值的单位，通常是以下几种：
 
-- - `ops/s`（操作/秒）：用于吞吐量模式，表示每秒完成的操作数。
+  - `ops/s`（操作/秒）：用于吞吐量模式，表示每秒完成的操作数。
   - `ms/op`（毫秒/操作）：用于平均时间模式，表示每次操作的平均时间。
   - `us/op`（微秒/操作）：用于采样时间模式，表示每次操作的时间。
   - `ns/op`（纳秒/操作）：同样用于时间模式，表示每次操作的时间。
@@ -136,7 +136,7 @@ RpcEvaluation.testSayHello                           ss       3      0.118 ±   
 
 ```
 Benchmark                                          Mode     Cnt      Score       Error  Units
-RpcEvaluation.testSayHello                        thrpt       3  24581.573 ± 4471.318  ops/s
+RpcEvaluation.testSayHello                        thrpt       3  24581.573 ±  4471.318  ops/s
 RpcEvaluation.testSayHello                         avgt       3      0.532 ±     6.159   s/op
 RpcEvaluation.testSayHello                       sample  305972      0.382 ±     0.002   s/op
 RpcEvaluation.testSayHello:testSayHello·p0.00    sample              0.003               s/op
