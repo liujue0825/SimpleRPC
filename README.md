@@ -27,6 +27,24 @@ RPC 框架架构图：
 
 ![RPC-framework](https://liujue.oss-cn-hangzhou.aliyuncs.com/img/202408121432779.png)
 
+## 项目结构
+
+● `consumer`模块：服务的消费者，依赖于`rpc-client-spring-boot-starter`模块；
+
+● `provider`模块：服务的提供者，依赖于`rpc-server-spring-boot-starter`模块；
+
+● `interface`模块：服务提供者暴露的 API；
+
+● `rpc-framework-core`模块：是 RPC 核心依赖，提供负载均衡、服务注册与发现、消息协议、消息编码解码、序列化算法；
+
+● `rpc-client-spring-boot`模块：RPC 客户端模块，封装客户端发起的请求过程，提供服务发现、动态代理，网络通信等功能；
+
+● `rpc-client-spring-boot-starter`模块：是`rpc-client-spring-boot`的 starter 模块，负责引入相应依赖进行自动配置；
+
+● `rpc-server-spring-boot`模块：RPC 服务端模块，负责启动服务，接受和处理 RPC 请求，提供服务发布、反射调用等功能；
+
+● `rpc-server-spring-boot-starter`模块：是`rpc-server-spring-boot`的 starter 模块，负责引入相应依赖进行自动配置。
+
 
 
 ## 快速开始
